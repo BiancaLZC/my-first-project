@@ -1,0 +1,110 @@
+:root {
+  --black: #212121;
+  --grey: #808080;
+  --dark-grey: #2f4f4f;
+  --white: #ffffff;
+  --darksalmon: #e9967a;
+  --font-one: "Raleway", sans-serif;
+  --font-two: "Playfair+Display" sans-serif;
+  --font-tree: "Sevillana&display", sans-serif;
+}
+/*Index html style */
+/*globals*/
+body {
+  color: var(--black);
+  font-size: 14px;
+  font-family: var(--font-two);
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 94px 0;
+}
+/*Header style*/
+.header-section {
+  display: flex;
+  align-items: center;
+  border-bottom: ridge var(--dark-grey) 0.5px;
+  padding-left: 50px;
+}
+.header-nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin-left: 200px;
+}
+.nav-bar a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--font-two);
+  font-size: 15px;
+}
+.nav-bar a:hover,
+.nav-bar a:focus {
+  color: var(--darksalmon);
+}
+.header-info {
+  text-align: center;
+  color: var(--black);
+  font-family: var(--font-two);
+  font-size: 15px;
+  margin-left: 270px;
+  display: flex;
+  gap: 70px;
+}
+.header-info a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--black);
+}
+.header-info a:hover,
+.header-info a:focus {
+  color: var(--darksalmon);
+}
+/*Hero style*/
+.hero-section {
+  width: 1600px;
+  height: 100%;
+  max-width: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.4),
+      rgba(196, 196, 196, 0.1)
+    ),
+    url(../images/background.jpg);
+  background-size: cover;
+}
+.hero-title {
+  font-family: var(--font-one);
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+.hero-subtitle {
+  font-family: var(--font-one);
+  font-size: 40px;
+  display: flex;
+  margin-left: 150px;
+}
+.hero-text {
+  font-family: var(--font-one);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.hero-btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
