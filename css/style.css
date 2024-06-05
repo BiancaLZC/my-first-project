@@ -110,19 +110,12 @@ section {
   display: flex;
   justify-content: center;
 }
-/*footer proiect comun*/
-.footer-container {
-  background-color: var(--dark-green);
-  width: 1440px;
-  max-width: 100%;
-  margin: 0 auto;
-  height: 534px;
-  color: var(--white);
-} /*Proiect comun
+/*proiect comun*/
+/*sale style*/
 .sale-section {
-  width: 1440px;
-  max-width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 80px 0 100px 0;
 }
 .sale-section .container {
   display: flex;
@@ -131,8 +124,8 @@ section {
 }
 
 .container {
-  width: 1200px;
-  max-width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .sale-title {
@@ -142,25 +135,30 @@ section {
   line-height: 44px;
   letter-spacing: -0.02em;
   text-align: left;
-  padding: 44px;
-  margin-left: 134px;
   color: var(--black-color);
 }
 .sale-container__products {
   display: flex;
-  padding-top: 204px;
+  margin-top: 204px;
+  margin-left: -50px;
 }
-
+.container__products {
+  display: flex;
+}
 .sale-products {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   margin-top: -1px;
   margin-right: 20px;
 }
 .sale-img {
+  display: flex;
   margin-top: -1px;
+}
+.sale-img img {
+  max-width: 100%;
 }
 .sale-text {
   display: flex;
@@ -189,7 +187,7 @@ section {
   margin-bottom: 20px;
 }
 
-span {
+.sale-discount {
   font-family: var(--font-epilogue);
   font-size: 12px;
   font-weight: 400;
@@ -235,4 +233,161 @@ span {
   display: block;
   margin-right: 20px;
   vertical-align: top;
-}*/
+}
+/*Media query sale*/
+@media screen and (max-width: 767px) {
+  .sale-section {
+    margin: 0 auto;
+  }
+  .container {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .sale-section .container {
+    flex-direction: column;
+  }
+  .sale-container__products {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .sale-title {
+    display: flex;
+    margin-bottom: -50px;
+  }
+}
+/*Footer style*/
+.footer-section {
+  background-color: var(--dark-green-color);
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 104px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 175px;
+}
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.logo-footer {
+  padding-bottom: 40px;
+}
+.footer-address a {
+  font-family: var(--font-epilogue);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white-color);
+  text-decoration: none;
+}
+.footer__nav-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__nav-bar a {
+  font-family: var(--font-epilogue);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white-color);
+  text-decoration: none;
+}
+.footer-icons {
+  display: flex;
+  margin-top: -60px;
+  gap: 16px;
+  border-radius: solid 4px var(--white-color);
+}
+.footer-icons svg {
+  width: 44px;
+}
+.footer-icon {
+  display: flex;
+  margin-top: -60px;
+  gap: 16px;
+  border-radius: solid 4px var(--white-color);
+}
+.footer-icon svg {
+  width: 44px;
+}
+.footer-icon {
+  display: none;
+}
+.copy-right-section {
+  display: flex;
+  justify-content: space-between;
+}
+.copy-right-section p {
+  font-family: var(--font-epilogue);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white-color);
+}
+.term-of-use__section {
+  display: flex;
+  gap: 20px;
+}
+.term-of-use__section a {
+  font-family: var(--font-epilogue);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/*Media query footer*/
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .footer__contacts {
+    padding-bottom: 75px;
+  }
+
+  .logo-footer {
+    padding-bottom: 40px;
+  }
+
+  .footer-icons {
+    display: none;
+  }
+  .footer-icon {
+    display: flex;
+  }
+  .copy-right-section {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .footer-section {
+    margin: 0 auto;
+  }
+  .container {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .logo-footer {
+    padding-bottom: 40px;
+  }
+}
