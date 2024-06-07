@@ -391,3 +391,9 @@ section {
     padding-bottom: 40px;
   }
 }
+:root {
+  --black-color: #141414;
+  --dark-green-color: #1e2827;
+  --white-color: #ffffff;
+  --font-epilogue: "Epilogue", sans-serif;
+}
