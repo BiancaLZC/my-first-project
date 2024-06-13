@@ -10,6 +10,88 @@
   --font-two: Sevillana;
   --font-tree: Playfair;
 }
+/*Hero style*/
+.hero-section {
+  background-color: var(--slate-grey-color);
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 104px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.hero-title {
+  font-family: var(--font-tree);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+.hero-section__intro {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 0;
+}
+.hero-section__i img {
+  width: 249px;
+  height: 387px;
+  top: 610px;
+  left: 62px;
+  border-radius: 700px;
+}
+/*Our Service style*/
+.our-service__section {
+  background-color: var(--white-smoke-color);
+  margin: 0 auto;
+  padding-bottom: 60px;
+  max-width: 1440px;
+  padding-top: 104px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.our-service__title {
+  font-family: var(--font-one);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.our-service__catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 0;
+}
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.box-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: var(--white-color);
+  background-color: #2f303acc;
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  padding: 10px 0;
+}
 /*Appointments style*/
 .steps-section {
   background-color: var(--light-grey-color);
