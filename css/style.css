@@ -10,6 +10,67 @@
   --font-two: Sevillana;
   --font-tree: Playfair;
 }
+/*Header style*/
+.header-section {
+  background-color: var(--white-smoke-color);
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 50px;
+  border-bottom: solid 1px var(--light-grey-color);
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 93px;
+}
+.nav-bar {
+  display: flex;
+  text-align: center;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 20px;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--red-color);
+  text-decoration: none;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.header-logo {
+  padding-bottom: 10px;
+  margin-right: 40px;
+}
+.header-icons svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--slate-grey-color);
+}
+.header-icons {
+  display: flex;
+  gap: 85px;
+}
+.header-icons svg:hover,
+.header-icons svg:focus {
+  fill: var(--red-color);
+  cursor: pointer;
+}
 /*Hero style*/
 .hero-section {
   background-color: var(--slate-grey-color);
@@ -28,12 +89,11 @@
   line-height: 64px;
   letter-spacing: -0.04em;
   text-align: center;
+  padding-bottom: 40px;
 }
 .hero-section__intro {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding-left: 0;
 }
 .hero-section__i img {
   width: 249px;
@@ -41,6 +101,53 @@
   top: 610px;
   left: 62px;
   border-radius: 700px;
+  margin: 540px 0px 70px 80px;
+}
+.hero-section__img img {
+  width: 486px;
+  height: 742px;
+  top: 152px;
+  left: 397px;
+  border: 1px;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+  border-radius: 700px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+.hero-button button {
+  width: 184px;
+  height: 156px;
+  top: 41px;
+  left: 9px;
+  opacity: 0px;
+  border-radius: 500%;
+  overflow: hidden;
+  margin-top: 765px;
+  margin-bottom: 100px;
+  background-color: var(--light-grey-color);
+  color: var(--slate-grey-color);
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 20px;
+}
+.hero-button button:hover,
+.hero-button button:focus {
+  color: var(--red-color);
+  transform: scale(1.5);
+}
+.hero-section__s img {
+  width: 249px;
+  height: 387px;
+  top: 386px;
+  left: 969px;
+  border-radius: 500px;
+  margin: 0px 60px 336px 60px;
 }
 /*Our Service style*/
 .our-service__section {
