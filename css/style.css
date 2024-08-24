@@ -404,11 +404,10 @@
     display: none;
   }
 
-  /*hero*/
-  .container {
-    margin: 0 auto;
-    max-width: 375px;
+  .header-icons {
+    display: none;
   }
+  /*hero*/
   /*our services*/
   /*appointments steps*/
   /*feedback*/
